@@ -1,0 +1,84 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Java_Script_32</title>
+	<link rel="icon" type="text/css" href="pic/1a.jpg"> 
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+
+<!--  First Login Code  -->
+	<font>
+		User Name 01 :- <br>
+		<input type="text" name="UserName" placeholder="Useer Name" id="uname"><br><br>
+
+		Password 01 :- <br>
+		<input type="password" name="Password" placeholder="Password" id="upass"><br><br>
+		<input type="submit" value="Login" onclick="dutta()"><br>
+	</font><br><br>
+
+
+	<script type="text/javascript">
+		function dutta()
+		{
+			var user = document.getElementById("uname").value; 
+			var pass = document.getElementById("upass").value; 
+			user == "riddhiman" && pass == 731912 ? window.alert("Login Successfully") : window.alert("Login Failed"); 
+
+		}
+	</script>
+<fieldset>
+	User Name 01 :- riddhiman <br><br>
+	Password 01 :- 731912 <br><br>
+	User Name 02 :- riddhiman862 <br><br>
+	Password 02 :- 733143 <br><br>
+	Form :- Mouse Event (Onsubmit="dutta()") <br>
+	Excepted Keyboard & Button Both Formation. Such As Enter. 
+</fieldset><br><br>
+
+
+
+
+	<!--  Second Login Code   --> 
+
+	<form onsubmit="return dutta1()">
+		User Name 02 :- <br>
+		<input type="text" name="UserName" placeholder="Useer Name" id="uname1"><br><br>
+
+		Password 02 :- <br>
+		<input type="password" name="Password" placeholder="Password" id="upass1"><br><br>
+		<input type="submit" value="Login"><br>
+	</form>
+	<h1 id="result"></h1>
+
+
+	<script type="text/javascript">
+		function dutta1()
+		{
+			var user = document.getElementById("uname1").value; 
+			var pass = document.getElementById("upass1").value; 
+			var check = user == "riddhiman862" && pass == 733143 ? "Login Successfully" : "Login Failed"; 
+			document.getElementById("result").innerHTML = check;  
+			return false; 
+
+		}
+	</script>
+	
+	
+
+
+</body>
+</html>
+
+
+
+
+

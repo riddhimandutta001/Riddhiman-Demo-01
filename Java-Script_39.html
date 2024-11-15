@@ -1,0 +1,80 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Java_Script_39</title>
+	<link rel="icon" type="text/css" href="pic/1a.jpg">
+
+
+</head>
+<body>
+
+<!-- Chapter 28 Function Parameter --> 
+	<form>
+		<input type="text" name="First" placeholder="First No" id="first"><br><br>
+
+		<input type="text" name="Second" placeholder="Second No" id="sec"><br><br>
+
+		<input type="submit" onclick="return dutta1()"><br>
+	</form><br><br>
+
+	<h1>The Addition Is : <b id="add"></b></h1> 
+
+	<h1>The Subtraction Is : <b id="sub"></b></h1> 
+
+	<h1>The Multiplication Is : <b id="multi"></b></h1> 
+
+	<h1>THe DIvision Is : <b id="divide"></b></h1>
+
+
+	<script type="text/javascript">
+		function dutta1()
+		{
+			var a = Number(document.getElementById("first").value); 
+			var b = Number(document.getElementById("sec").value); 
+
+			add(a,b); 
+			sub(a,b); 
+			multi(a,b); 
+			divide(a,b); 
+			return false;
+		}
+
+		function add(x,y)
+		{
+			var result = document.getElementById("add"); 
+			result.innerHTML = x+y; 
+		}
+
+		function sub(x,y)
+		{
+			var result = document.getElementById("sub"); 
+			result.innerHTML = x-y; 
+		}
+
+		function multi(x,y)
+		{
+			var result = document.getElementById("multi"); 
+			result.innerHTML = x*y; 
+		}
+
+		function divide(x,y)
+		{
+			var result = document.getElementById("divide"); 
+			result.innerHTML = x/y; 
+		}
+	</script>
+	
+
+
+</body>
+</html>
+
+
+
+
+

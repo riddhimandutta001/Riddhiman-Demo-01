@@ -1,0 +1,91 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Java_Script_38</title>
+	<link rel="icon" type="text/css" href="pic/1a.jpg">
+
+
+</head>
+<body>
+<!-- Chapter 28 Function Parameter -->
+	<form>
+		<input type="text" name="First No" placeholder="First Number" id="first"><br><br>
+
+		<input type="text" name="Second NO" placeholder="Second Number" id="sec"><br><br>
+
+		<input type="text" name="Third NO" placeholder="Third Number" id="three"><br><br>
+
+		<input type="submit" onclick="return dutta1()">
+	</form><br><br><br><br><br>
+
+
+
+	<script type="text/javascript">
+
+// Chapter 28 Function Parameter 
+		function dutta1()
+		{
+			var fir = Number(document.getElementById("first").value); 
+			var sec = Number(document.getElementById("sec").value);
+			var three = Number(document.getElementById("three").value); 
+			lol(fir, sec, three);
+			return false;
+		}
+
+		function lol(fir,sec,three)
+		{
+			window.alert(fir+sec*three);
+		}
+
+	</script>
+
+
+
+
+	<form>
+		<input type="text" name="First" placeholder="Number 01" id="fi"><br><br>
+
+		<input type="text" name="Second" placeholder="Number 02" id="se"><br><br>
+
+		<input type="text" name="Third" placeholder="Number 03" id="th"><br><br>
+
+		<input type="text" name="Fourth" placeholder="Number 04" id="fo"><br><br> 
+
+		<input type="submit" onclick="return dutta2()">
+	</form><br>
+
+	<script type="text/javascript">
+		function dutta2()
+		{
+			var a = Number(document.getElementById("fi").value);
+			var b = Number(document.getElementById("se").value); 
+			var c = Number(document.getElementById("th").value); 
+			var d = Number(document.getElementById("fo").value); 
+			
+			multiple(a,b,c,d); 
+			return false; 
+		}
+
+		function multiple(n,o,p,q)
+		{
+			window.alert(n+o*p/q); 
+		}
+	</script>
+
+
+
+	
+
+
+</body>
+</html>
+
+
+
+
+

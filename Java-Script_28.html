@@ -1,0 +1,91 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Java_Script_28</title>
+	<link rel="icon" type="text/css" href="pic/1a.jpg"> 
+	<style type="text/css">
+
+		#div1{
+			width: 775px; height: 630px; box-sizing: border-box; margin: 0 auto; border: skyblue solid 10px; padding: 10px;
+		}
+
+		#image{
+			width: 720px; box-sizing: border-box; border: 2px black solid;
+		}
+
+		#div2{
+			width: 200px; height: 80px; border: 2px gray solid; margin: 20px; float: left; display: flex; justify-content: center; align-items: center; flex-direction: column; background: darkorange; 
+		}
+
+		p{
+			color: darkblue; font-family: calibri; font-size: 20px; font-weight: bold; margin-top: 2px; 
+		}
+	</style>
+
+	<script type="text/javascript">
+
+		function dutta1()
+		{
+			var a = document.getElementById("range1").value; 
+			var b = document.getElementById("image"); 
+			b.style.filter= "brightness("+ a +"%)"; 
+		}
+
+		function dutta2()
+		{
+			var d = document.getElementById("range2").value; 
+			var e = document.getElementById("image"); 
+			e.style.filter= "contrast("+ d +"%)"; 
+		}
+
+		function dutta3()
+		{
+			var g = document.getElementById("range3").value; 
+			var h = document.getElementById("image"); 
+			h.style.filter= "saturate("+ g +"%)"; 
+		}
+
+	</script>
+
+</head>
+<body>
+
+<div id="div1">
+	<img src="anime/crop_big/f.jpg" alt="Gara_01" id="image" style="margin-left: 8px">
+
+
+	<div id="div2">
+		<p>Brightness</p>
+		<input type="range" id="range1" min="0" max="500" oninput="dutta1()">
+	</div>
+
+	<div id="div2">
+		<p>Contrast</p>
+		<input type="range" id="range2" min="0" max="500" oninput="dutta2()">
+	</div>
+
+	<div id="div2">
+		<p>Saturation</p>
+		<input type="range" id="range3" min="0" max="500" oninput="dutta3()">
+	</div>
+</div>
+
+
+	
+
+
+</body>
+</html>
+
+
+
+
+

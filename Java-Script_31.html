@@ -1,0 +1,92 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Java_Script_31</title>
+	<link rel="icon" type="text/css" href="pic/1a.jpg">
+</head>
+<body>
+	<form>
+		User Name :- <br>
+		<input type="text" name="UserName" placeholder="Riddhiman" id="user01"><input type="submit" value="Check" onclick="dutta1()">
+	</form><br>
+
+
+
+	<form>
+		User Name :- <br>
+		<input type="text" name="UserName" placeholder="Dutta" id="user02"><input type="submit" value="Check" onclick="dutta2()">
+	</form><br><br><br>
+
+
+	<script type="text/javascript">
+		function dutta1()
+		{
+			var a = document.getElementById("user01").value; 
+			a == "Riddhiman" ? window.alert("User Found") : window.alert("User Not Found"); 
+		}
+
+
+
+		function dutta2()
+		{
+			var a = document.getElementById("user02").value; 
+			var result = a == "Dutta" ? "User Found" : "User Not Found"; 
+			window.alert(result); 
+		}
+
+
+		function dutta3()
+		{
+			var a = document.getElementById("user03").value; 
+			var result = a % 2 == 0 ? "Even Number" : "Odd Number"; 
+			document.getElementById("italic").innerHTML = result; 
+			return false; 
+		}
+
+
+		function dutta4()
+		{
+			var a = document.getElementById("user04").value; 
+			var result = a % 2 == 0 ? " is an Even Number" : " is anOdd Number"; 
+			document.getElementById("italic02").innerHTML = a + result; 
+			return false; 
+		}
+
+	</script>
+
+
+
+	<h1>Q.  Write a program to find user input is even or odd number? </h1>
+	<h1>Ans. </h2> 
+	<form>
+		User Name :- <br>
+		<input type="number" name="Number" id="user03"><button onclick="return dutta3()">Even & Odd</button>
+	</form><br>
+	<b><i id="italic"></i></b><br><br><br>
+
+
+
+
+	<form>
+		User Name :- <br>
+		<input type="number" name="Number" id="user04" oninput="dutta4()">
+	</form><br>
+	<b><i id="italic02"></i></b><br><br><br>
+
+
+
+	
+
+
+</body>
+</html>
+
+
+
+
+

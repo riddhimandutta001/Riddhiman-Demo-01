@@ -1,0 +1,109 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Java_Script_33</title>
+	<link rel="icon" type="text/css" href="pic/1a.jpg"> 
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+	<button onclick="dutta1()">Click Me 01</button><br><br><br>
+
+		<script type="text/javascript">
+		function dutta1()
+		{
+			var a = "riddhiman"; 
+			var b = a.length; 
+			window.alert(b); 
+		}
+	</script>
+
+
+<!--  New Code  -->
+	<form>
+		Password :- <br>
+		<input type="password" name="Password" maxlength="12" id="pass">  
+		<button onclick="return dutta2()">Click Me 02</button>
+	</form><br><br>
+
+	<script type="text/javascript">
+		function dutta2()
+		{
+			var a = document.getElementById("pass").value; 
+			var b = a.length; 
+			window.alert(b); 
+			return false; 
+		}
+	</script>
+	
+
+
+
+
+<!--  New Code  -->
+	<form>
+		Password :- <br>
+		<input type="password" name="Password" maxlength="12" id="pass2" onclick="dutta3()" oninput="dutta4()">
+		<span id="span"></span>
+
+		<i id="loader" class="fa fa-spinner fa-spin" aria-hidden="true" style="opacity: 0;"></i><i class="fa fa-check" aria-hidden="true" id="check" style="opacity: 0;"></i>
+		
+	</form>
+
+	<script type="text/javascript">
+		function dutta3()
+		{
+			var a = document.getElementById("span"); 
+			a.innerHTML = "Enter 10 Digit Password"; 
+		}
+
+		function dutta4()
+		{
+			var x = document.getElementById("span"); 
+			x.style.display="none"; 
+
+			var y = document.getElementById("loader"); 
+			y.style.opacity= 1; 
+
+			var z = document.getElementById("pass2").value; 
+			var len = z.length; 
+
+			var chk = document.getElementById("check");
+			len > 8 ? chk.style.opacity = 1 : y.style.opacity = 1;
+			len > 8 ? y.style.opacity = 0 : chk.style.opacity = 0; 
+
+			
+			 
+		}
+	</script>
+	
+
+
+
+
+	<br><br><br>
+	<h1>Want Internet Connection</h1><br>
+
+	<i class="fa fa-camera-retro fa-lg"></i> fa-lg
+	<i class="fa fa-camera-retro fa-2x"></i> fa-2x
+	<i class="fa fa-camera-retro fa-3x"></i> fa-3x
+	<i class="fa fa-camera-retro fa-4x"></i> fa-4x
+	<i class="fa fa-camera-retro fa-5x"></i> fa-5x
+
+	
+
+
+</body>
+</html>
+
+
+
+
+

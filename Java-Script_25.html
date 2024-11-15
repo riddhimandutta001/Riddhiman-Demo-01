@@ -1,0 +1,59 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Java_Script_25</title>
+	<link rel="icon" type="text/css" href="pic/1a.jpg">
+
+	<style type="text/css">
+
+		#one{
+			color: blue; 
+		}
+		#two{
+			width: 250px; height: 50px; position: fixed; background: green; bottom: 50px; left: 40%; } 
+
+		#four{
+				position: fixed; bottom: 50px; left: 45%; 
+			}
+
+		#three{
+			text-align: center; color: white; font-weight: bold; font-size: 17px; margin-left: 10px; 
+		}
+	</style>
+
+	<script type="text/javascript">
+		function dutta()
+		{
+			var a = document.getElementById("four").value; 
+			var b = document.getElementById("one"); 
+			b.style.fontSize= a + "PX"; 
+			var c = document.getElementById("three"); 
+			c.innerHTML="Your Font Size Is Now " + a + "PX"; 
+		}
+	</script>
+
+</head>
+<body>
+	<h1 id="one">STP Computer Education</h1>
+
+
+
+	<div id="two">
+		<i id="three"></i>
+		<input type="range" name="range" min="0" max="1000" id="four" oninput="dutta()">
+	</div>
+	
+
+
+</body>
+</html>
+
+
+
+
+

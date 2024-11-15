@@ -1,0 +1,88 @@
+
+
+
+@charset "utf"; 
+
+*{
+	margin: 0; padding: 0; box-sizing: border-box; 
+}
+
+header{
+	width: 100%; height: auto; background: darkblue; padding: 15px; 
+	color: white; font-weight: bold; font-size: 35px; 
+}
+
+#code_box{
+	margin: 20px auto; width: 90%; height: 500px; 
+}
+
+legend{
+	font-size: 35px; color: darkorange;  font-family: sans-serif; font-weight: bold; 
+}
+
+#code{
+	width: 100%; height: 90%; border: none; 
+	padding: 20px; font-size: 18px; outline: none; 
+}
+
+#run_btn{
+	padding: 10px; margin: 10px; font-weight: bold; 
+}
+
+#result{
+	width: 100%; height: 93%; overflow: scroll; padding: 15px; 
+}
+
+#result_box{
+	display: none; margin: 20px auto; width: 90%; height: 500px; 
+}
+
+#icon{
+	display: none; padding: 10px; font-weight: bold;margin: 10px; 
+}
+
+@media only screen and (max-width: 600px)
+{
+	legend{
+		font-size: 20px; color: red; 
+	}
+	header{
+		font-size: 16px; font-family: cursive; padding: 10px; 
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

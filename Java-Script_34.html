@@ -1,0 +1,81 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Java_Script_34</title>
+	<link rel="icon" type="text/css" href="pic/1a.jpg">
+</head>
+<body>
+
+	<button onclick="dutta1()">Match Function 01</button>
+
+	<button onclick="dutta2()">Match Function 02</button><br><br><br>
+
+	<script type="text/javascript">
+		function dutta1()
+		{
+			var a = "I am From India"; 
+			var b = a.match("India"); 
+			window.alert(b);
+		}
+
+		function dutta2()
+		{
+			var a = "I am From India"; 
+			var b = a.match("What The ..."); 
+			window.alert(b);
+		}
+
+	</script>
+
+
+
+	<form>
+		Email ID :
+		<input type="email" name="Email" placeholder="Email ID" id="email"> 
+		<input type="submit" onclick="rdx()">
+	</form><br><br><br>
+
+	<script type="text/javascript">
+		function rdx()
+		{
+			var user = document.getElementById("email").value; 
+			user.match("yahoomail.com") ? window.alert("Mail Accepted") : window.alert("Mail Not Accepted");
+		}
+	</script>
+
+	<form>
+		Password : 
+		<input type="password" name="Password" placeholder="Password" id="password">
+		<input type="submit" onclick="return rdx2()">
+	</form>
+	<p><b><i id="msg"></i></b></p>
+
+	<script type="text/javascript">
+		function rdx2()
+		{
+			var capital = /[A-Z]/g; 
+			var lower = /[a-z]/g; 
+			var number = /[0-9]/g; 
+
+			var a = document.getElementById("password").value; 
+			var b = a.match(capital) && a.match(lower) && a.match(number) ? "Password Accepted" : "Password Not Accepted"; 
+			document.getElementById("msg").innerHTML = b; 
+			return false;
+		}
+	</script>
+
+	
+
+
+</body>
+</html> 
+
+
+
+
+

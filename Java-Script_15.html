@@ -1,0 +1,173 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Java_Script_15</title>
+	<link rel="icon" type="text/css" href="pic/1a.jpg">
+
+	<script type="text/javascript">
+		
+		function rdx()
+		{
+			var n = document.getElementById("one"); 
+			n.innerHTML = "RIddhiman"; 
+			n.style.background = "powderblue"; 
+			n.style.color = "darkblue"; 
+			n.style.border = "2px solid blue"; 
+			n.style.fontSize = "40px"; 
+			n.style.fontFamily ="verdana"; 
+
+
+		}
+
+		function rdx2()
+		{
+			var bod = document.getElementById("body"); 
+			bod.style.background = "gray"; 
+			bod.style.color = "red"; 
+			bod.style.fontFamily ="mangal"; 
+		}
+
+		function rdx3()
+		{
+			document.getElementById("body"); 
+			body.style.background = "green"; 
+			body.style.color ="black"; 
+			body.style.fontFamily ="verdana"; 
+		}
+
+		function rdx4()
+		{
+			var bo = document.getElementById("body");
+			bo.bgColor ="black"; 
+			bo.style.color ="orange"; 
+			bo.style.fontFamily ="calibri"; 
+		}
+
+		
+
+	</script>
+
+	<style type="text/css">
+		body{
+			color: white; 
+			font-size: 30px; 
+			font-weight: bold; 
+		}
+	</style>
+
+
+
+
+</head>
+<body id="body" bgcolor="purple">
+
+	Q. Print the user input <br>
+	Ans. 
+	<input type="text" name="Full Name" maxlength="30" id="input"><button onclick="input()">Click Me</button><br><br>
+
+	<script type="text/javascript">
+		function input()
+		{
+			var x = document.getElementById("input").value; 
+			window.alert(x); 
+		}
+		
+	</script>
+
+
+
+
+
+
+	<button onclick="rdx4()">First Time & One Time Change Body BG Color</button><br><br>
+
+	Q. How to change the text of existing HTML elements ? <br> Ans. 
+	<button id="one" onclick="rdx()">Click Me</button>
+	<br><br>
+
+	Q. Working with attribute selector. 
+	<br> Ans. 01
+	<button onclick="rdx2()">Click Me 01</button><br><br>
+	
+	Q. Working with attribute selector. 
+	<br> Ans. 02
+	<button onclick="rdx3()">Click Me 02</button><br><br><br>
+
+	
+	
+
+
+
+
+
+
+
+	Q. How to print the value of attribute ? <br>
+	See You Image Code. <br>
+
+	<img src="anime/crop_big/c.JPG" width="720px" height="480px" alt="Big_C" id="tree1"><br>
+
+	<img src="anime/crop_small/c.jpg" alt="Small_B" onclick="dog()">
+
+	<script type="text/javascript">
+		function dog()
+		{
+			var a = document.getElementById("tree1");
+			a.src="anime/crop_big/c.JPG";
+		}
+	</script>
+
+
+
+	<img src="anime/crop_small/a.jpg" alt="Small_B" onclick="dop()">
+
+	<script type="text/javascript">
+		function dop()
+		{
+			var a = document.getElementById("tree1");
+			a.src="anime/crop_big/a.JPG";
+		}
+	</script>
+
+
+
+
+	<img src="anime/crop_small/a.jpg" alt="Small_B" onclick="tree()"><br><br><br><br><br><br><br>
+
+	<script type="text/javascript">
+		function tree()
+		{
+
+			var a = document.getElementById("tree1").src.replace(/.*(\/|\\)/,''); 
+			window.alert(a); 
+
+			var b = document.getElementById("tree1").width; 
+			window.alert(b); 
+
+			var c = document.getElementById("tree1").height; 
+			window.alert(c); 
+
+			var d = document.getElementById("tree1").alt; 
+			window.alert(d); 
+			}
+
+
+
+
+	</script>
+
+	
+
+
+</body>
+</html>
+
+
+
+
+

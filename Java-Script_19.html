@@ -1,0 +1,81 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Java_Script_19</title>
+	<link rel="icon" type="text/css" href="pic/1a.jpg">
+
+	<script type="text/javascript">
+		function rdx1()
+		{
+			var y = document.getElementById("one"); 
+			window.alert("My name is Riddhiman Dutta " + 25 * 4); 
+		}
+
+		function rdx2()
+		{
+			var e = document.getElementById("one"); 
+			window.alert("I am " + 21 + " Years Old")
+		}
+
+
+
+	</script>
+
+
+	<style type="text/css">
+		#show{
+			width: 200px; height: 200px; border: 5px dashed darkred; margin: 50px auto; background-size: cover; border-radius: 110px 110px; 
+		}
+
+		#pink{
+			border-radius: 110px 110px; 
+			width: 200px; height: 200px;  
+		}
+	</style>
+
+
+</head>
+<body>
+
+	<button onclick="rdx1()">Click One</button> <br><br>
+	<button onclick="rdx2()">Click Two</button> <br><br>
+
+
+
+
+
+
+
+
+
+	<div id="show">
+		<img src="anime/crop_small/d.jpg" alt="Small_D"  id="pink">
+	</div>
+
+	<input type="file" name="" accept=".jpg" id="file" onchange="rdx3()">
+
+	<script type="text/javascript">
+		function rdx3()
+		{
+		 	var w = document.getElementById("file").value.replace(/.*(\/|\\)/, ''); 
+		 	window.alert(w); 
+			
+			var y = document.getElementById("pink"); 
+			y.style.backgroundImage = "url("+file+")"); 
+
+		}
+
+	</script>
+
+	
+
+</body>
+</html>
+
+
+
